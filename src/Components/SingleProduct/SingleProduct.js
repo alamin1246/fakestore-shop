@@ -5,7 +5,7 @@ const SingleProduct = (props) => {
     console.log(props.product);
     const {setCartCount} = props;
     return (
-        <div className='col-md-4'>
+        <div data-aos="flip-left" data-aos-easing="linear" data-aos-duration="1500"  className='col-md-4'>
             <div className="card p-2 border m-2">
                 <img className='w-50 m-auto' height={250} src={props.product.image} alt="" />
               <h1>{props.product.title.slice(0,10)}</h1>
